@@ -1,19 +1,6 @@
-%%%%
-% Forcing line breaks in \url within bib latex
-% https://tex.stackexchange.com/a/237684
-%%%%
-\PassOptionsToPackage{hyphens}{url}
-%%%%
-% LATEX Class for the Association for Computing Machinery
 % https://www.acm.org/binaries/content/assets/publications/consolidated-tex-template/acmart.pdf
-%%%%
-\documentclass[sigchi, timestamp, manuscript, screen]{acmart}
-% \documentclass[sigchi]{acmart}
-
-%%%%
-% To use the SIGCHI extended abstract template, please visit
-% https://www.overleaf.com/read/zzzfqvkmrfzn
-%%%%
+%\documentclass[sigchi, timestamp, manuscript, screen]{acmart}
+\documentclass[sigconf]{acmart}
 
 %%%%
 % What packages do people load by default in LaTeX?
@@ -35,10 +22,11 @@
 
 \begin{document}
 
-\title[BodyPose - Break Slouching Habits of the Digital Age]{BodyPose - Break Slouching Habits of the Digital Age: Design and Evaluation of a Pose Monitoring Concept}
+\title[BodyPose - Break Slouching Habits of the Digital Age]{BodyPose - Break Slouching Habits of the Digital Age: Design and Evaluation of a Posture Monitoring Concept}
 
 % AUTHOR
 \author{Andreas Ellwanger}
+\orcid{0000-0003-2024-9439}
 \affiliation{%
   \institution{LMU Munich}
   \city{Munich}
@@ -52,8 +40,7 @@
   \institution{LMU Munich}
   \city{Munich}
   \state{Bavaria}
-  \country{Germany}
-}
+  \country{Germany}}
 \email{timo.erdelt@campus.lmu.de}
 % AUTHOR
 \author{Samantha Kühn}
@@ -61,24 +48,31 @@
   \institution{LMU Munich}
   \city{Munich}
   \state{Bavaria}
-  \country{Germany}
-}
-\email{samantha.kuehn@campus.lmu.de}
+  \country{Germany}}
+\email{s.kuehn@campus.lmu.de}
 % AUTHOR
 \author{Johannes Tochtermann}
 \affiliation{%
   \institution{LMU Munich}
   \city{Munich}
   \state{Bavaria}
-  \country{Germany}
-}
+  \country{Germany}}
 \email{johannes.tochtermann@campus.lmu.de}
 
 %%%%
 % ABSTRACT
 %%%%
 \begin{abstract}
-tbd
+% Motivation: introductory 1-2 sentences
+As back pain tops the list of all reported work-related disorders, it is a severe, but common constraint, that reduces the quality of life. 
+% Problem statement
+Therefore it is crucial to instrumentalise motivational prevention tools and education to preserve employees from developing back pain.
+% Approach
+One approach on reducing the risk of back pain is to increase healthy postural habits. Therefore we designed BodyPose for work environments involving PC/Laptop usage. It is a web app, that evaluates the user's body posture via webcam and gives feedback if an unhealthy misalignment is detected.
+% Results
+Due to the notifications, users feel immediately motivated to correct a bad posture and maintain a healthy body alignment. Furthermore, users stated that, they feel an overall awareness on increasing/maintaining positive postural habits as a long term motivation.
+% Conclusions
+Therefore BodyPose qualifies as an effective application to encourage users to work on their body posture and prevent them from developing back pain due to slouching habits.
 \end{abstract}
 
 %%%%
