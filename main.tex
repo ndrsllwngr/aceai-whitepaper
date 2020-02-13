@@ -1,6 +1,6 @@
 % https://www.acm.org/binaries/content/assets/publications/consolidated-tex-template/acmart.pdf
 %\documentclass[sigchi, timestamp, manuscript, screen]{acmart}
-\documentclass[sigconf]{acmart}
+\documentclass[sigconf, screen]{acmart}
 
 %%%%
 % What packages do people load by default in LaTeX?
@@ -22,7 +22,7 @@
 
 \begin{document}
 
-\title[BodyPose - Break Slouching Habits of the Digital Age]{BodyPose - Break Slouching Habits of the Digital Age: Design and Evaluation of a Posture Monitoring Concept}
+\title[BodyPose - Break Slouching Habits of the Digital Age]{BodyPose - Break Slouching Habits of the Digital Age:\\Design and Evaluation of a Posture Monitoring Concept}
 
 % AUTHOR
 \author{Andreas Ellwanger}
@@ -63,22 +63,21 @@
 % ABSTRACT
 %%%%
 \begin{abstract}
-% Motivation: introductory 1-2 sentences
-As back pain tops the list of all reported work-related disorders, it is a severe, but common constraint, that reduces the quality of life. 
-% Problem statement
-Therefore it is crucial to instrumentalise motivational prevention tools and education to preserve employees from developing back pain.
-% Approach
-One approach on reducing the risk of back pain is to increase healthy postural habits. Therefore we designed BodyPose for work environments involving PC/Laptop usage. It is a web app, that evaluates the user's body posture via webcam and gives feedback if an unhealthy misalignment is detected.
-% Results
-Due to the notifications, users feel immediately motivated to correct a bad posture and maintain a healthy body alignment. Furthermore, users stated that, they feel an overall awareness on increasing/maintaining positive postural habits as a long term motivation.
-% Conclusions
-Therefore BodyPose qualifies as an effective application to encourage users to work on their body posture and prevent them from developing back pain due to slouching habits.
+Neck, shoulder and low back pain top the list of reported work-related disorders. Frequent computer usage seems to be one decisive factor for these disorders and can thus lead to a reduced quality of life for employees.
+In order to help employees prevent back pain, it is crucial to instrumentalise motivational prevention tools and education.
+One approach to lower the risk for back pain is to increase healthy postural habits.
+However, as employees focus on their current work, slouching habits may arise unintentionally.
+
+We developed BodyPose as a reactive but accessible web application to detect slouching in computer-related work activities. It evaluates the upper body posture using computer vision and a rule-based system without the need for additional hardware beyond a standard webcam. With the focus on usability, it grants instant feedback using notifications. 
+
+To evaluate the impact of BodyPose, we conducted a user study (N=3). Overall, the users reported they felt motivated to correct a bad posture and maintain healthy body alignment, both short- and long-term.
+The findings imply that BodyPose may encourage users to work on their body posture and counteract potential destructive slouching habits.
 \end{abstract}
 
 %%%%
 % KEYWORDS
 %%%%
-\keywords{User interface, neural network.}
+\keywords{Affective computing, office workspace, body posture, computer vision, PoseNet, neural network, web app, user interface, persuasive technologies.}
 
 %%%%
 % MAKE TITLE !!! DON'T MOVE
